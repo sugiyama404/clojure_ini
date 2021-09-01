@@ -1,0 +1,8 @@
+version: '3'
+services:
+  clojure:
+    build: .
+    command: 'lein run'
+    working_dir: /usr/src/app/workspace
+    volumes:
+      - ./workspace:/usr/src/app/workspace
